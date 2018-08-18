@@ -1,4 +1,4 @@
-# Simplistic HTML
+# Simplistic HTML v1.5
 
 Simple but pretty HTML template for use.
 
