@@ -30,6 +30,7 @@
 
 body{
     background: #f39b10;//lightgray;
+    margin: 0;
 }
 section {
     border-radius: 20px;

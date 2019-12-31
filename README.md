@@ -1,8 +1,8 @@
-# Simplistic HTML v1.5
+# Simplistic HTML v2.0
 
 Simple but pretty HTML template for use.
 
-Used by boostlessons.com.
+Used by boostlessons.com and tournament.ev3lessons.com.
 
 Preview: <a href="http://sanjayseshan.github.io/Simplistic-HTML">Simplistic HTML</a>.
 
