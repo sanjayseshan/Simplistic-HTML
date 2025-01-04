@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <title>My Webpage</title>
+    <script src="https://use.fontawesome.com/releases/v6.7.2/js/all.js" data-search-pseudo-elements></script>
+    <link rel="icon" href="img/SanjayLogo.png">
+
+</head>
+
+<body>
+    <div style="position:fixed;top:5px;margin-left: 5px;z-index: 99999999999;"><button id="hide"
+            class="btn btn-secondary" onclick="show()"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button></div>
+
+    <script>
+        state = true;
+
+        function show() {
+            if (state) {
+                state = false;
+                document.getElementById("hide").innerHTML = '<i class="fa fa-bars" aria-hidden="true">';
+                document.getElementById("nav").style.opacity = "0";
+                document.getElementById("nav").style.transform = "translate(-160px)"
+
+                // document.getElementById("nav").style.display = "none";
+                document.getElementById("main").style.marginLeft = "0px";
+
+            } else {
+                state = true;
+                document.getElementById("hide").innerHTML = '<i class="fa fa-chevron-left" aria-hidden="true">';
+                // document.getElementById("nav").style.display = "inline";
+                document.getElementById("nav").style.opacity = "100";
+                document.getElementById("nav").style.transform = "translate(0px)"
+
+
+                document.getElementById("main").style.marginLeft = "160px";
+
+            }
+        }
+    </script>
+    <div class="sidenav" id="nav">
+
+        <center>
+            <!-- <img src="img/Seshan_014.jpg" style="object-fit:cover;border-radius:30%;width:90%;"> -->
+            <img src="istockphoto-1332100919-612x612.jpg" style="object-fit:cover;border-radius:30%;width:90%;">
+            <a href="#top"><b style="color:white">John Doe</b></a>
+            <a href="#about">About</a>
+            <a href="#publications">Publications</a>
+            <a href="#projects">Projects</a>
+            <a href="#awards">Activities</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <br>
+
+            <div style="display:inline" class="fafaside">
+
+                <a target="_blank" href="https://github.com/">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <div style="margin:0;padding:0;padding-top:4px"></div>
+                <!-- <br> -->
+                <a target="_blank" href="http://google.com">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-file fa-stack-1x fa-inverse"></i>
+                        <i style="font-size: 8px;align-content:center;margin-top: 5px;" class="fa-stack-2x">CV</i>
+                    </span>
+                </a>
+
+                <a target="_blank" href="mailto:me@email.com">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <div style="margin:0;padding:0;padding-top:4px"></div>
+
+                <!-- <br> -->
+                <a target="_blank" href="https://scholar.google.com/">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+
+                        <i class="fa fa-brands fa-google-scholar fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+
+        </center>
+
+    </div>
+    <div style="width:100%">
+        <center>
+            <div id="top"></div>
+            <div class="main" id="main" style="margin-top:10px; max-width: 1024px; text-align: center;">
+
+                <br>
+                <div id='about' class="bordered">
+                    <h2>About</h2>
+                </div>
+                <div id='about2' class="bordered">
+                    <div class="sectioncontent">
+
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+
+
+                    </div>
+                </div>
+
+
+                <br>
+                <div id='publications' class="bordered">
+                    <h2>Publications and Presentations</h2>
+                </div>
+                <div class="bordered">
+                    <div>
+                        <div class="sectioncontent">
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id='projects' class="bordered">
+                    <h2>Projects</h2>
+                </div>
+                <div class="bordered">
+                    <div class="">
+                        <div class="sectioncontent">
+                            <ul>
+
+                                <li><b> Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum. </li>
+                                <li><b> Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum. </li>
+
+
+                            </ul>
+
+
+                            <div class="pcontainer" id="MixItUpAC0232"
+                                style="margin-top: 10px;align-items: center; justify-content: center;">
+
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+
+
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+
+                                <div class="mix green">
+                                    <center>
+                                        <a target="_blank" href="http://www.google.com">
+                                            <img src="istockphoto-1332100919-612x612.jpg" width="90%" alt="">
+                                            <h4>Lorem ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </a>
+                                    </center>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id='awards' class="bordered">
+                    <h2>Activities</h2>
+                </div>
+                <div class="bordered">
+                    <div class="sectioncontent">
+                        <ul>
+
+                            <li><b> Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum. </li>
+                            <li><b> Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum. </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <br>
+                <div id='experience' class="bordered">
+                    <h2>Experience</h2>
+                </div>
+                <div>
+                    <div class="sectioncontent">
+
+                        My CV/resume is available <a href="http://google.com">here</a>.
+                        <br><br>
+
+                        <div>
+                            <!-- <h5></h5> -->
+                            <div style="margin-left: 0px;">
+
+                                <b>Company
+                                    -- Title -- Location</b>
+                                <br> Date
+                                <ul>
+                                    <li>
+                                        Description
+                                    </li>
+
+                                </ul>
+
+
+                                <h5>Skills</h5>
+                                <ul>
+
+                                    <li> Something</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <br>
+                        <div id='education' class="bordered">
+                            <h2>Education</h2>
+                        </div>
+                        <div>
+                            <div class="sectioncontent">
+                                <div style="margin-left:0;">
+
+                                    <b>University</b>
+                                    <ul>
+                                        <li>Degree</li>
+                                        <li>Date</li>
+                                    </ul>
+                                </div>
+                                <h5>Relevant Coursework</h5>
+                                <ul>
+                                    <li>Class No., Name</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id='contact' class="bordered">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="bordered">
+                        <p class="sectioncontent" style="margin-left: 20px;margin-top: 10px"> Feel free to reach out to
+                            me
+                            at <a target="_blank" href="mailto:me@email.com">me@email.com</a>.</p>
+
+                        <p>
+                            Design by Sanjay Seshan, 2021-2025.
+                        </p>
+                    </div>
+                    <br>
+                </div>
+        </center>
+    </div>
+</body>
+
+</html>
