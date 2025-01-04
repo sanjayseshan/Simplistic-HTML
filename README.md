@@ -4,6 +4,8 @@ Simple but pretty HTML template for use.
 
 Used by boostlessons.com, tournament.ev3lessons.com, sanjay.seshan.org, cvai.seshan.org, and others.
 
+Preview: <a href="http://sanjayseshan.github.io/Simplistic-HTML/">Simplistic HTML classic</a>.
+
 Preview: <a href="http://sanjayseshan.github.io/Simplistic-HTML/oldstyle">Simplistic HTML v2</a>.
 
 Preview: <a href="http://sanjayseshan.github.io/Simplistic-HTML/newstyle">Simplistic HTML v3</a>.
